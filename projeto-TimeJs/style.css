@@ -1,0 +1,59 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-direction: column;
+    background-color: #2C4770;
+    font-family: 'Play', sans-serif;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: gold;
+}
+
+#flex-item-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #142E54;
+
+    font-size: 2rem;
+
+    padding: 25px;
+    margin: 50px;
+
+}
+
+#timer-area {
+    color: white;
+    margin: 50px;
+    font-size: 5rem;
+}
+
+#date-area {
+    color: whitesmoke;
+    font-size: 2.5rem;
+}
+
+
+
+@media (max-width: 600px) {
+    #timer-area {
+        color: white;
+        margin: 50px;
+        font-size: 2rem;
+    }
+    
+    #date-area {
+        color: whitesmoke;
+        font-size: 1.5rem;
+    }
+}
