@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner&display=swap" rel="stylesheet">
+    <title>City Bike</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="form-area">
+
+        
+        <header>
+            <h1 id="title">Formulario City Bike</h1>
+            <p id="description">
+
+               ajudem a melhorar nosso serviço em sua cidade
+
+            </p>
+
+            <h2> #VemDebici🚴 </h2>
+        </header>
+
+        <form action="resultado.html" method="GET" id="survey-form">
+
+            <div class="form-section">
+                <label id="name-label" for="username-field" > Qual seu nome </label>
+                <input  class="input-text" type="text" name="username"  id="username-field" placeholder="digite seu nome" required>
+            </div>
+
+            <div class="form-section">
+                <label for="genero-field" id="genero-label">Qual seu genero</label>
+                <!-- <input type="text" name="usergander"> -->
+
+                <select id="genero-field"   class="dropdown"  required >
+           
+                    <option value="0">Selecione </option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Feminino</option>
+                    <option value="3">Outros</option>
+                    
+     
+                </select>
+
+            
+                </div>
+
+            <div class="form-section">
+                <label for="userage-field" id="number-label">Qual sua idade</label>
+                <input class="input-text"  type="number" name="userage" id="userage-field" placeholder="digite sua idade" min="13"
+                max="99" required>
+
+            </div>
+            
+            <div class="form-section">
+                <label for="useremail-field" id="email-label">Qual seu email</label>
+                <input  class="input-text"  type="email" name="useremail" id="useremail-field" placeholder="digite seu Email" required>
+            </div>
+
+            <div class="form-section">
+                <label for="ocupation-field" id="ocupation-label">Qual sua ocupaçao </label>
+              
+
+                <select id="dropdown"  class="dropdown"  name="user_job" required >
+           
+                    <option disabled selected value >Selecione </option>
+                    <option value="1">Estudante</option>
+                    <option value="2">Trabalhador integral</option>
+                    <option value="3">Trabalhador informal</option>
+                    <option value="4">Outros</option>
+                    <option value="5">Prefiro nao imformar</option>
+                    
+     
+                </select>
+
+            
+                </div>
+
+                <div class="form-section">
+                    <label for="city-field" id="city-label">Selecione sua cidade</label>
+                    <!-- <input type="text" name="usergander"> -->
+    
+                    <select id="city-field"   class="dropdown" name="usercity" required >
+               
+                        <option   disabled selected value>Selecione </option>
+                        <option  value="1">Recife - PE </option>
+                        <option value="2">Aracaju - SE</option>
+                        <option value="3">Salvador - BA </option>
+                        <option  value="4">Lençois - BA </option>
+                        <option  value="5">Porto Seguro - BA </option>
+                        <option value="6">Ouro Preto - MG</option>
+                        <option  value="7">Belo Horizonte - MG</option>
+                        <option  value="8">Rio de Janeiro- RJ </option>
+         
+                    </select>
+    
+                
+                    </div>
+
+
+
+                <div class="form-section " >
+
+                    <label> Selecione quantos vezes vc usa o serviço por semana </label>
+                    <div class="form-section-ratio">
+                        <label for="a1" class="input-radio"> 
+                            <input type="radio" name="tempo_uso_semana"  value="1" id="a1" >   1-2 vezes na semana 
+                        </label>
+
+                        <label for="a2" class="input-radio"> 
+                            <input type="radio" name="tempo_uso_semana"  value="2" id="a2" >   3-4 vezes na semana
+                        </label>
+
+                        <label for="a3" class="input-radio"> 
+                            <input type="radio" name="tempo_uso_semana"  value="3"  id="a3">   5-6 vezes na semana
+                        </label>
+
+                        <label for="a4" class="input-radio"> 
+                            <input type="radio" name="tempo_uso_semana"  value="4" id="a4">   todos os dias da semana 
+                        </label>
+                        
+                        
+                    </div>
+                    
+                </div>
+
+
+                <div class="form-section">
+                    <label> Selecione o tempo de uso em cada viagem</label>
+                    <div class="form-section-ratio" >
+                        
+
+                        <label for="b1" class="input-radio"> 
+                            <input type="radio" name="tempo_viajem"  value="1" id="b1" >   menos de 10 minutos
+                        </label>
+
+                        <label for="b2" class="input-radio"> 
+                            <input type="radio" name="tempo_viajem"  value="2" id="b2">   entre 10 a 30 min 
+                        </label>
+
+                        <label for="b3" class="input-radio"> 
+                            <input type="radio" name="tempo_viajem"  value="3" id="b3">   entre  30 a 45 min
+                        </label>
+
+                        <label for="b4" class="input-radio"> 
+                            <input type="radio" name="tempo_viajem"  value="4" id="b4">  mais de 45 min
+                        </label>
+
+                    </div>
+                    
+                    
+                    
+                </div>
+
+                <div class="form-section">
+                    <label for="">Selecione</label>
+                    <div id="form-section-check">
+                        <label for="c1" class="input-checkbox"> 
+                            <input type="checkbox" name="qualidade_bike"  value="1" id="c1" >  Qualidade das bicicletas
+                        </label>
+
+                        <label for="c2" class="input-checkbox"> 
+                            <input type="checkbox" name="qualidade_stands"  value="1" id="c2">   Qualidade dos Bike Stand
+                        </label>
+
+                        <label for="c3" class="input-checkbox"> 
+                            <input type="checkbox" name="valor_servico"  value="1" id="c3">   Valor do serviço
+                        </label>
+
+                        <label for="c4" class="input-checkbox"> 
+                            <input type="checkbox" name="applicativo"  value="1" id="c4">  Aplicativo
+                        </label>
+
+                        <label for="c5" class="input-checkbox"> 
+                            <input type="checkbox" name="facilidade"  value="1" id="c5">  Facil uso
+                        </label>
+
+                    </div>
+                  </div>
+
+
+                <div class="form-section">
+                <p>Algum comentario ou sugestão </p>
+                <textarea name="comentario" id="" cols="30" rows="10" placeholder="digite aqui">  </textarea>
+                </div>
+
+            
+
+
+
+
+
+            <div>
+             <button type="submit">Enviar</button>
+            </div>
+        </form>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>

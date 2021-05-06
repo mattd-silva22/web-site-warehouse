@@ -1,0 +1,124 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    display: flex;
+    background-color: #5039cf;
+    justify-content: center;
+    height: 100%;
+    background-image: url(../img/bike-4149653_1920\ \(1\).jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 1.3rem;
+}
+
+form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(250, 174, 112, 0.9);
+    border-radius: 25px;
+    text-align: left;
+    margin: 75px;
+
+}
+
+
+
+
+
+header {
+    margin: 75px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgba(250, 174, 112, 0.9);
+    border-radius: 25px;
+    
+}
+
+
+
+
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px;
+}
+
+
+
+.input-text  {
+    padding: 8px;
+    font-size: 1.2rem;
+}
+.dropdown {
+    padding: 8px;
+    font-size: 1.2rem;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(131, 207, 9);
+}
+
+
+
+.input-radio, .input-checkbox {
+    margin: 5px;
+    text-align: left;
+    display: block; 
+    
+}
+
+
+
+
+textarea {
+    
+    width: 100%;
+    
+
+    resize: vertical;
+}
+
+
+
+
+@media (max-width: 600px) {
+    
+    #container {
+        font-size: 1rem;
+    }
+    
+    form {
+        padding: 10px;
+        margin: 10px;
+    
+    }
+    
+    
+
+    
+    header {
+        margin: 10px;
+        padding: 10px;
+       
+        
+    }
+    
+    
+
+}
+
+

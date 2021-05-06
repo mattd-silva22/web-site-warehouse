@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 1.3rem;
+}
+
+
+
+
+#container {
+    display: flex;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../img/bike-4149653_1920\ \(1\).jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 1.1rem;
+}
+
+
+#area-text {
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    background-color: rgba(250, 174, 112, 0.9);
+    border-radius: 25px;
+}
