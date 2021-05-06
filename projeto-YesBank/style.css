@@ -1,0 +1,246 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}   
+
+
+#container {
+
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+header {
+    text-align: center;
+    /* background-color: #2f2fa2; */
+    background-color: rgb(235, 235, 235);
+    
+
+}
+
+
+#logo img {
+    width: 150px;
+}
+
+/* start main  */
+#main {
+    
+    background-color: #2f2fa2;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(47, 47, 162, 1);
+    background: linear-gradient(to bottom, #2f2fa2 , #242582 );
+   
+     
+    color:  white;
+
+    text-align: center;
+}
+
+#main-left-area {
+
+    width: 40vw;
+    margin: 25px;
+    background-color: rgba(77, 77, 192, 0.4);
+    border-radius: 10px;
+    background-image: url(img/bitcoinLogoWallpaper.png);
+    background-size: auto;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-attachment: fixed;
+    
+}
+
+#text-hid {
+    display: none;
+}
+
+#main-right-area {
+    width: 60vw;
+    margin: 25px;
+    background-color:rgba(77, 77, 192, 0.4);
+    border-radius: 10px;
+
+
+}
+
+#right-area-text-1 {
+    margin: 35px 20px 10px 20px;
+}
+
+#right-area-text-1 h1 {
+    font-size: 3.5em;
+}
+
+#right-area-text-1 p:nth-child(3) {
+    font-size: 2em
+}
+
+#right-area-text-2 {
+    font-size: 0.8em;
+    margin: 100px 20px 10px 20px;
+}
+/* end main  */
+
+/* main form  */
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+input#client-email {
+    width: 25vw;
+    height: 5vh;
+    margin: 10px;
+    text-align: center;
+}
+
+
+#send-button {
+    background-color: #f64c72;
+    border: 5px solid   #f64c72;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    width: 12vw;
+    height: 6vh;
+}
+/* info */
+
+#info {
+    
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(235, 235, 235);
+    
+    
+    text-align: center;
+}
+
+
+.info-text-box {
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 3rem;
+}
+
+
+#link-button {
+    background-color: #f64c72;
+    border: 5px solid   #f64c72;
+    border-radius: 5px;
+    width: 12vw;
+    height: 6vh;
+}
+
+#link-button a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+footer {
+    background-color: #2f2fa2;
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.footer-text-box {
+    padding: 10px;
+    margin: 3rem;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+
+    border: 1px solid white;
+}
+
+.footer-text-box h3 {
+    color: goldenrod;
+    font-size: 1.5em;
+}
+
+#footer {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    
+}
+
+/* #resp-img-area {
+    display: none;
+}
+}
+
+#resp-img-area  img {
+    width:  80%;
+    margin: 25px;
+    background-color:rgba(77, 77, 192, 0.4);
+    border-radius: 10px;
+} */
+
+
+@media (max-width: 700px) {
+    footer {
+        flex-direction: column;
+    }
+
+    #info {
+        flex-direction: column;
+    }
+    #main {
+        background-image: url(img/bitcoinLogoWallpaper.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position:center;
+        background-attachment: fixed;
+    }
+    #main-left-area {
+        display: none; 
+    }
+
+    #main-right-area {
+        width: 90vw;
+        background-color:rgba(77, 77, 192, 0.95);
+    }
+
+    input#client-email {
+        width: 50vw;
+        margin: auto;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    #send-button, #link-button {
+        width: 30vw;
+        margin: 15px;
+    }
+
+ 
+    
+    /* #resp-img-area {
+        display: block;
+    }
+    #resp-img-area  img {
+        width:  85%;
+        margin: 25px;
+        background-color:rgba(77, 77, 192, 0.4);
+        border-radius: 10px;
+    } */
+}
